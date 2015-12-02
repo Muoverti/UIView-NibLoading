@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.homepage            = "http://bou.io/UIView-NibLoading.html"
   s.license             = 'MIT'
   s.author              = { "Nicolas Bouilleaud" => "nico@bou.io" }
-  s.platform            = :ios, '6.1'
+  s.ios.deployment_target = "6.1"
+  s.tvos.deployment_target    = '9.0'
   s.source              = { :git => "https://github.com/n-b/UIView-NibLoading.git", :tag => "1.2.0" }
   s.source_files        = '*.{h,m}'
   s.requires_arc        = true
